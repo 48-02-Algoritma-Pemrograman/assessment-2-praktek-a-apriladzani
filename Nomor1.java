@@ -4,15 +4,15 @@ public class Nomor1 {
 
     public static void main(String[] args){
         Scanner input = new Scanner(System.in);
-        int N = input.nextInt();
+        int n = input.nextInt();
         /* Pekerjaan anda mulai dari sini */
-        hitung(n);
+        variable(n);
         /* Pekerjaan anda berakhir sini */
 
         System.out.println(Nomor1.class.getDeclaredMethods().length); 
     }
 
-    public static void hitung(int n){
+    public static void variable(int n){
           for (int i = 0; i <= n; i++) {
             if (i==0) {
                 System.out.print("0 ");
