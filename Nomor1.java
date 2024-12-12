@@ -23,10 +23,9 @@ public class Nomor1 {
             } else if (i % 3 == 0 && i % 5 == 0) {
                 System.out.print("FizzBuzz ");
             } else {
-                System.out.print(i + " ");
+                System.out.print(" " + i);
             }
         }
                 System.out.print("\n");
-
     }  
 }
