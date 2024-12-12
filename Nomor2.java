@@ -8,6 +8,8 @@ public class Nomor2 {
         String[] daftarBuku = {"Sherlock Holmes", "Arsene Lupin", "Game of Throne", "Psychology of Money"};
         int[] hargaBuku = {350000, 450000, 500000, 95000};
 
+        ArrayList<Integer> hargaBelanja = new ArrayList<>();
+
         boolean a = true;
         while (a) {
             System.out.print("Masukan pilihan buku [1/2/3/4]:");
@@ -19,8 +21,34 @@ public class Nomor2 {
                 a = false;
             }
         }
+        int totalHarga = hitungTotalHarga(hargaBelanja);
+        int voucherBelanja = hitungVoucherBelanja(totalHarga);
+        System.out.print("Total voucher belanja = " + voucherBelanja);
+        System.out.printf("Total yang harus dibayar = " + (totalHarga - voucherBelanja));
         /* Pekerjaan anda berakhir sini */
 
         System.out.println(Nomor2.class.getDeclaredMethods().length); 
+    }
+
+    public static int hitungVoucherBelanja(int totalHarga) {
+        if (totalHarga < 200000) {
+            return 0;
+        } else if (totalHarga >= 200000 && totalHarga <= 500000) {
+            return 50000;
+        } else if (totalHarga > 500000 && totalHarga <= 750000) {
+            return 100000;
+        } else if (totalHarga > 750000 && totalHarga <= 1000000) {
+            return 150000;
+        } else {
+            return 200000;
+        }
+    }
+
+    public static int hitungTotalHarga(ArrayList<Integer> hargaBelanja) {
+        int totalHarga = 0;
+        for (int harga : hargaBelanja) {
+            totalHarga += harga;
+        }
+        return totalHarga;
     }
 }
