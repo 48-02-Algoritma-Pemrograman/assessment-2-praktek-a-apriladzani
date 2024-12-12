@@ -14,7 +14,7 @@ public class Nomor1 {
     }
 
     public static void hitung(int n){
-         for (int i = 0; i <= n; i++) {
+          for (int i = 0; i <= n; i++) {
             if (i==0) {
                 System.out.print("0 ");
             } else if (i % 3 == 0 ) {
@@ -25,7 +25,7 @@ public class Nomor1 {
                 System.out.print("FizzBuzz ");
             } else {
                 System.out.print(i + " ");
-            } 
+            }
         }
     }  
 }
