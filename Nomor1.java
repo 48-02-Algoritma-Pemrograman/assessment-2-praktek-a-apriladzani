@@ -6,7 +6,6 @@ public class Nomor1 {
         Scanner input = new Scanner(System.in);
         int N = input.nextInt();
         /* Pekerjaan anda mulai dari sini */
-        scanner.close();
         hitung(n);
         /* Pekerjaan anda berakhir sini */
 
