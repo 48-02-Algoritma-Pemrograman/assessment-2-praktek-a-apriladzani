@@ -21,9 +21,7 @@ public class Nomor1 {
                 System.out.print("Buzz ");
             } else if (i % 3 == 0 && i % 5 == 0) {
                 System.out.print("FizzBuzz ");
-            } else {
-                System.out.print(i + " ");
-            }
+            } 
         }
     }
     
