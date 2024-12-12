@@ -14,7 +14,7 @@ public class Nomor1 {
 
     public static void variable(int n){
           for (int i = 0; i <= n; i++) {
-            if (i==0) {
+            if (i == 0) {
                 System.out.print("0 ");
             } else if (i % 3 == 0 ) {
                 System.out.print("Fizz ");
