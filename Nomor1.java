@@ -27,7 +27,5 @@ public class Nomor1 {
             }
         }
      System.out.println("2");
-                hitung(n);
-
     }  
 }
