@@ -26,6 +26,6 @@ public class Nomor1 {
                 System.out.print(" " + i);
             }
         }
-                System.out.print("\n");
+                System.out.print();
     }  
 }
